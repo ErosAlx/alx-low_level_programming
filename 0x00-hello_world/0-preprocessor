@@ -1,2 +1,2 @@
-#!jbin/bash
-gcc -E $CFILE > c
+#!/bin/bash
+gcc -E $FILEC > c
