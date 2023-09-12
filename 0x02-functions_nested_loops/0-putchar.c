@@ -11,13 +11,11 @@
 int main(void)
 {
 	char str[] = "_puthchar";
-	int ch = 0;
+	int ch;
 
-	while (ch < 9)
-	{
+	for (ch = 0; ch < 8; ch++)
 		_putchar(str[ch]);
-		ch++;
-	}
 	_putchar('\n');
+
 	return (0);
 }
