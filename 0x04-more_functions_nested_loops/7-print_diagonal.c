@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagonal - function that draws a diagonal line on the terminal.
+ * print_diagonal - function print a diagonal line.
  *
  * @n: number of times / character should be printed
  *
