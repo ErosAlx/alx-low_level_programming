@@ -5,7 +5,7 @@
  *
  * @size: size of the square
  *
- * Return: return 0 
+ * Return: return 0
 */
 
 void print_square(int size)
@@ -15,7 +15,9 @@ void print_square(int size)
 	for (i = 1; i <= size; i++)
 	{
 		for (x = 1; x <= size; x++)
+		{
 			_putchar('#');
+		}
 		_putchar('\n');
 	}
 }
