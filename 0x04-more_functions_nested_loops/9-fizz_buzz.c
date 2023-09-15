@@ -1,16 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 
-/** main - Entry point
+/**
+ * main - Entry point
  *
  * Description: program that prints the numbers from 1 to 100
- * for multiples of three print Fizz /
- * for the multiples of five print Buzz /
- * For numbers which are multiples of both print FizzBuzz.
+ * for multiples of 3 print Fizz ,for 5 print Buzz ,
+ * for bothi 3 and 5 print FizzBuzz.
  *
  * Return: return 0.
  */
 
-int main()
+int main(void)
 {
 	int i = 1;
 
@@ -34,4 +34,6 @@ int main()
 		}
 		i++;
 	}
+	printf("\n");
+	return (0);
 }
