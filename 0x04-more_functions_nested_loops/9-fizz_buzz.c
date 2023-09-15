@@ -33,9 +33,14 @@ int main(void)
 			printf("%d", i);
 		}
 		if (i != 100)
-		printf(" ");
+		{
+			printf(" ");
+		}
+		else
+		{
+			printf("\n");
+		}
 		i++;
 	}
-	printf("\n");
 	return (0);
 }
