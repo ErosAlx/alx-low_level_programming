@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * _puts - function printing a string followed
- * by a new line to stdout.
+ * print_rev - printing a string, in reverse.
  *
  * @str: string takes input from other function.
  *
