@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen - function printing a string followed
+ * _puts - function printing a string followed
  * by a new line to stdout.
  *
  * @str: string takes input from other function.
