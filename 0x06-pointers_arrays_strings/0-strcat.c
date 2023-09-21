@@ -20,10 +20,10 @@ char *_strcat(char *dest, char *src)
 	}
 	while (src[x])
 	{
-		dest[i++] = src[x];
+		dest[i] = src[x];
+		i++;
 		x++;
 	}
 	return (dest);
 
 }
-
