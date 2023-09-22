@@ -1,35 +1,6 @@
 #include "main.h"
 
 /**
- * delim_check -  checking if the char is delimiter or not.
- *
- * @c: charachter.
- *
- * Return:if c is a delimiter the return is 1 if not the returns is 0.
-*/
-
-int delim_check(char c)
-{
-	char delim_check[] = " \t\n,;.!?\"(){}";
-	int length = 0;
-
-	/* Calculate the length of delim_check array */
-	while (delim_check[length] != '\0')
-	{
-		length++;
-	}
-
-	for (int x = 0; x < length; x++)
-	{
-		if (c == delim_check[x])
-		{
-			return (1);
-		}
-	}
-	return (0);
-}
-
-/**
  * cap_string - a function that capitalizes
  *              all words of a string
  *
@@ -40,26 +11,26 @@ int delim_check(char c)
 
 char *cap_string(char *str)
 {
-	char *AfterCap = str;
-	int delim = 1;
 	int i = 0;
 
-	while (str[i])
+	while (str[i] != '\0')
 	{
-		if (delim_check(str[i]))
+		if (str[i] >= 97 && str[i] <= 122)
 		{
-			delim = 1;
-		}
-		else if (delim && (str[i] >= 97 && str[i] <= 122))
-		{
-			str[i] = str[i] - 32;
-			delim = 0;
-		}
-		else
-		{
-			delim = 0;
+			if (i == 0)
+			{
+				str[i] -= 32;
+			}
+			if (str[i - 1] == 32 || str[i - 1] == 9 || str[i - 1] == 10 ||
+				str[i - 1] == 44 || str[i - 1] == 59 || str[i - 1] == 46 ||
+				str[i - 1] == 33 || str[i - 1] == 63 || str[i - 1] == 34 ||
+				str[i - 1] == 40 || str[i - 1] == 41 || str[i - 1] == 123 ||
+				str[i - 1] == 124)
+			{
+				str[i] -= 32;
+			}
 		}
 		i++;
 	}
-	return (AfterCap);
+	return (str);
 }
