@@ -7,7 +7,7 @@
  * @b: charactere takes input from othere function.
  * @n: numbere of bytes takes input from other function.
  *
- * Return: return 0.
+ * Return: return s.
  */
 
 char *_memset(char *s, char b, unsigned int n)
@@ -20,5 +20,5 @@ char *_memset(char *s, char b, unsigned int n)
 		i++;
 		n--;
 	}
-	return (0);
+	return (s);
 }
