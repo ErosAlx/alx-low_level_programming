@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * print_chessboard - function that prints the chess board.
  *
