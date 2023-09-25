@@ -5,7 +5,7 @@
  *
  * @s: string takes input from other function.
  * @b: charactere takes input from othere function.
- * @n: numbere of bytes takes input from other function.
+ * @n: number of bytes takes input from other function.
  *
  * Return: return s.
  */
