@@ -2,6 +2,8 @@
 #define MAIN_H
 
 #include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
 
 int _putchar(char c);
 void _puts_recursion(char *s);
@@ -15,5 +17,6 @@ int f_sqrt_recursion(int n, int i);
 int f_prime(int n, int i);
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
+bool check_palindrome(char *str, int left, int right);
 
 #endif /* MAIN_H */
