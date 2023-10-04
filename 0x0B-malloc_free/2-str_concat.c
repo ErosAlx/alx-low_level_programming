@@ -46,13 +46,12 @@ char *str_concat(char *s1, char *s2)
 	size2 = _strlen(s2);
 	sumsize = size1 + size2;
 	p = malloc(sumsize * sizeof(char) + 1);
-	int i = 0;
 
 	if (p == 0)
 	{
 		return (0);
 	}
-
+	i = 0;
 	while (i <= sumsize)
 	{
 		if (i < size1)
