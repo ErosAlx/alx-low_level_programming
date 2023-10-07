@@ -9,7 +9,7 @@
  * Return: returns int or 98.
  */
 
-void *malloc_checked(unsigned int b);
+void *malloc_checked(unsigned int b)
 {
 	int *p = malloc(b);
 
