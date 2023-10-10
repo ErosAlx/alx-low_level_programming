@@ -3,6 +3,6 @@
 
 #include <stdio.h>
 
-#define ABS(X) ((X < 0) ? (X * -1) : (X))
+#define ABS(X) ((X) < 0 ? ((X) * -1) : (X))
 
 #endif /* _OBJECT_LIKE_MACRO_H */
