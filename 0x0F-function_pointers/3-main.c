@@ -1,5 +1,5 @@
 #include "3-calc.h"
-#include "function_pointers.h" 
+#include "function_pointers.h"
 
 /**
  * main - Program Entry
@@ -19,6 +19,7 @@
  *
  * Return: 0-on success
 */
+
 int main(int argc, char *argv[])
 {
 	int num1, num2;
