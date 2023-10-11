@@ -8,7 +8,7 @@
  * @cmp: pointer to function call to check index in array
  *       if it matches
  *
- * Return: Always 0 (Success)
+ * Return: returns nothing
 */
 
 int int_index(int *array, int size, int (*cmp)(int))
@@ -18,9 +18,6 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	if (array != NULL && size > 0 && cmp != NULL)
 	{
-		if (size <= 0)
-			return (-1);
-
 		for (i = 0; i < size; i++)
 		{
 			y = cmp(array[i]);
