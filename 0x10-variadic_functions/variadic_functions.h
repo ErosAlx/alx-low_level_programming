@@ -9,7 +9,7 @@
  * struct print - A new struct type defining our print
  *
  * @symbol: Our symbol representing the data type
- * @print_func: a function pointer that prints
+ * @printer_t: a function pointer that prints
  *             a data type according to the symbol
 */
 
