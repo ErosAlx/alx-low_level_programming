@@ -23,5 +23,5 @@ size_t listint_len(const listint_t *h)
 			n_elements++;
 		}
 	}
-	return (elements);
+	return (n_elements);
 }
