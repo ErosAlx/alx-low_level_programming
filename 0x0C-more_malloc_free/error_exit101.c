@@ -9,12 +9,13 @@
 
 int error_exit(void)
 {
-        char *err;
-        int i;
+	char *err;
+	int i;
 
-        err = "Error";
-        for (i = 0; err[i] != '\0'; i++)
-                _putchar(err[i]);
-        _putchar('\n');
-        exit(98);
+	err = "Error";
+	for (i = 0; err[i] != '\0'; i++)
+		_putchar(err[i]);
+
+	_putchar('\n');
+	exit(98);
 }
